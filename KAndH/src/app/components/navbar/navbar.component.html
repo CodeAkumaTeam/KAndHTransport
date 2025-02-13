@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="brand-section">
+    <a routerLink="/" (click)="closeMenu()">
+      <img src="../../../assets/logo/kandh.png" alt="K And H Transport Logo" />
+    </a>
+  </div>
+
+  <button class="menu-toggle" id="menuToggle" (click)="toggleMenu()">
+    ☰
+  </button>
+
+  <ul class="nav-links" id="navLinks" [class.show]="menuOpen">
+    <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+    <li><a routerLink="/about-us" (click)="closeMenu()">About Us</a></li>
+    <li><a routerLink="/company-history" (click)="closeMenu()">Company History</a></li>
+    <li><a routerLink="/services" (click)="closeMenu()">Services</a></li>
+    <li><a routerLink="/contact-us" (click)="closeMenu()">Contact Us</a></li>
+  </ul>
+</nav>
