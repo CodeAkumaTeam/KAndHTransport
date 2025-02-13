@@ -4,9 +4,8 @@
     <div class="hero-overlay"></div>
     <img src="assets/images/truck-587819_1920.jpg" alt="Transportation fleet" class="hero-image">
     <div class="hero-content">
-      <h1 class="hero-title">K And H Transport</h1>
+      <h1 class="hero-title">K And H Transport Inc.</h1>
       <p class="hero-subtitle">Premium Logistics Solutions Across America</p>
-      <button class="cta-button">Get Free Quote →</button>
     </div>
   </section>
 
@@ -18,21 +17,24 @@
     </div>
     <div class="gallery-grid">
       <div class="gallery-card">
-        <img src="assets/images/production-4408573.jpg" alt="Warehouse">
+        <img src="assets/images/container-ship-6631117_1920.jpg" alt="Shipping">
         <div class="gallery-overlay">
-          <h3>Warehouse Operations</h3>
+          <h3>Global Shipping</h3>
+          <p>Efficient container shipping across the globe.</p>
         </div>
       </div>
       <div class="gallery-card">
-        <img src="assets/images/truck-2391940.jpg" alt="Fleet">
+        <img src="assets/images/ferrybridge-5428427_1920.jpg" alt="Ferry Transport">
         <div class="gallery-overlay">
-          <h3>Modern Fleet</h3>
+          <h3>Ferry Transport</h3>
+          <p>Reliable ferry services for goods and vehicles.</p>
         </div>
       </div>
       <div class="gallery-card">
-        <img src="assets/images/truck-2407264_1920.jpg" alt="Transport">
+        <img src="assets/images/highway-3392100_1920.jpg" alt="Highway Logistics">
         <div class="gallery-overlay">
-          <h3>Long Haul Transport</h3>
+          <h3>Highway Logistics</h3>
+          <p>Fast and secure highway transportation.</p>
         </div>
       </div>
     </div>
@@ -50,21 +52,21 @@
           <i class="fas fa-truck"></i>
         </div>
         <h3>Road Freight</h3>
-        <p>Nationwide dry van and flatbed transportation with real-time tracking</p>
+        <p>Nationwide dry van and flatbed transportation with real-time tracking.</p>
       </article>
       <article class="service-card">
         <div class="card-icon">
-          <i class="fas fa-snowflake"></i>
+          <i class="fas fa-ship"></i>
         </div>
-        <h3>Refrigerated Transport</h3>
-        <p>Temperature-controlled logistics for sensitive goods</p>
+        <h3>Marine Transport</h3>
+        <p>Efficient shipping solutions for global trade.</p>
       </article>
       <article class="service-card">
         <div class="card-icon">
-          <i class="fas fa-cogs"></i>
+          <i class="fas fa-train"></i>
         </div>
-        <h3>Heavy Machinery</h3>
-        <p>Specialized handling for oversized industrial equipment</p>
+        <h3>Rail Freight</h3>
+        <p>Cost-effective rail transportation for bulk goods.</p>
       </article>
     </div>
   </section>
@@ -79,17 +81,17 @@
       <div class="advantage-card">
         <div class="advantage-number">01</div>
         <h3>24/7 Monitoring</h3>
-        <p>Real-time GPS tracking for all shipments</p>
+        <p>Real-time GPS tracking for all shipments.</p>
       </div>
       <div class="advantage-card">
         <div class="advantage-number">02</div>
         <h3>Safety First</h3>
-        <p>$5M cargo insurance & certified drivers</p>
+        <p>$5M cargo insurance & certified drivers.</p>
       </div>
       <div class="advantage-card">
         <div class="advantage-number">03</div>
         <h3>Quick Response</h3>
-        <p>Average 2-hour quote turnaround time</p>
+        <p>Average 2-hour quote turnaround time.</p>
       </div>
     </div>
   </section>
@@ -105,24 +107,51 @@
         <h3>Ready to Ship?</h3>
         <div class="info-item">
           <i class="fas fa-phone"></i>
-          <p>1-800-TRUCK-KH</p>
+          <p>Office phone number +1 (734) 238-7030</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <p>Additional phone number +1 (281) 701-1177</p>
         </div>
         <div class="info-item">
           <i class="fas fa-envelope"></i>
-          <p>contactkandhtransport.com</p>
+          <p>kandhtransport0&#64;gmail.com</p>
         </div>
         <div class="info-item">
           <i class="fas fa-map-marker-alt"></i>
-          <p>123 Logistics Way, Dallas, TX 75201</p>
+          <p>8230 Emerald Ln W, Westland, MI 48185</p>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.724778934721!2d-83.3987226845408!3d42.40767797918461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824a5a7f1e3a5a5%3A0x9e8a1a1a1a1a1a1a!2s8230%20Emerald%20Ln%20W%2C%20Westland%2C%20MI%2048185%2C%20USA!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number">
-        <textarea rows="5" placeholder="Shipment Details"></textarea>
-        <button class="cta-button">Submit Request</button>
-      </form>
+      
+      <div class="contact-form-card">
+        <h3>Get a Free Quote</h3>
+        <form class="contact-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" name="name" ngModel required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" name="email" ngModel required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" name="phone" ngModel>
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Shipment Details" name="message" ngModel></textarea>
+          </div>
+          <button type="submit" class="cta-button">Submit Request</button>
+        </form>
+      </div>
     </div>
   </section>
 </div>
