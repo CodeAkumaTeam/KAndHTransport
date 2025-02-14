@@ -9,6 +9,7 @@
 .about-container {
   background-color: var(--container-bg);
   min-height: 100vh;
+  background-color: rgb(233, 220, 203);
 }
 
 /* Hero Section */
