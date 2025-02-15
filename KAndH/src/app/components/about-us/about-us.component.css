@@ -6,16 +6,13 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.about-container {
-  background-color: var(--container-bg);
-  min-height: 100vh;
+.about-container{
   background-color: rgb(233, 220, 203);
 }
-
 /* Hero Section */
 .hero-section {
   position: relative;
-  min-height: 50vh;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +41,7 @@
   position: relative;
   z-index: 3;
   text-align: center;
-  color: beige;
+  color: white;
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -63,6 +60,21 @@
   font-weight: 300;
 }
 
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: var(--primary-red);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8a0f2f;
+}
+
 /* Content Sections */
 .content-sections {
   max-width: 1400px;
@@ -71,15 +83,15 @@
 }
 
 .content-card {
-  background: white;
+  background: rgb(236, 234, 234);
   border-radius: 12px;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   box-shadow: var(--shadow);
 }
 
 .bordered-section {
   border: 2px solid var(--primary-red);
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 /* Section Layout */
@@ -122,12 +134,6 @@
   box-shadow: var(--shadow);
 }
 
-.section-logo {
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-}
-
 /* List Styles */
 .icon-list {
   list-style: none;
@@ -150,13 +156,26 @@
   flex-shrink: 0;
 }
 
-/* Special Sections */
-.text-only-section {
-  background: var(--light-bg);
+/* Contact Info */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
 }
 
-.accent-bg {
-  background: rgba(179, 25, 66, 0.05);
+.contact-info li {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.contact-info i {
+  color: var(--primary-red);
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 /* Responsive Design */
